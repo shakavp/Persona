@@ -64,17 +64,24 @@ def make_personas_dict(personas_list):
         PERSONAS.update({persona_now: []})
         i += 1
         while all_file[i]:
-            PERSONAS[persona_now].append(tuple(all_file[i].split(' ')))
+            name_lvl = all_file[i].split(' ')
+            lvl = name_lvl.pop()
+            name = ' '.join(name_lvl)
+            PERSONAS[persona_now].append(tuple((name, int(lvl))))
             i += 1
             if i == len(all_file):
                 break
         i += 1
-    print PERSONAS
+    print (PERSONAS)
     
 
 def find_match_persona(arcana_key, expected_lvl):
     candidates = PERSONAS[arcana_key]
-    return tuple(('', 0))  # TODO
+    expected_persona = ''
+    for persona in candidates:
+        if persona[1] < expected_lvl:
+            expected_persona = persona
+    return expected_persona
 
 
 def fusion_persona(persona_1, persona_2, persona_3=None):
@@ -90,18 +97,18 @@ def fusion_persona(persona_1, persona_2, persona_3=None):
             fusion_lvl = ((persona_1[2] + persona_2[2]) / 2) + 1
         else:
             fusion_lvl = (persona_1[2] + persona_2[2]) / 2            
-        result[0], result[2] = find_match_persona(result[1], fusion_lvl)
+        result[0], result[2] = find_match_persona(result[1], int(fusion_lvl))
     return tuple(result)
 
 
 def test_fusion_list():
     f1 = open("fusion_list.txt")
-    print WEIGHT
+    print (WEIGHT)
     for line in f1:
         try:
             WEIGHT[line.strip()]
         except KeyError:
-            print "ERRO:", line.strip()
+            print ("ERRO:", line.strip())
     f1.close()
 
 
@@ -119,10 +126,10 @@ if __name__ == '__main__':
     make_weight()
     make_fusion_dict(fusion_list)
     make_personas_dict(personas_list)
-    p1 = ('', 'Lovers', 0)
-    p2 = ('', 'Chariot', 0)
-    print fusion_persona(p1, p2)
-    print fusion_persona(p2, p1)
+    p1 = ('', 'Lovers', 23)
+    p2 = ('', 'Chariot', 23)
+    print (fusion_persona(p1, p2))
+    print (fusion_persona(p2, p1))
     if DEBUG:
         print_debug()
     fusion_list.close()
