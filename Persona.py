@@ -64,12 +64,17 @@ def make_personas_dict(personas_list):
         PERSONAS.update({persona_now: []})
         i += 1
         while all_file[i]:
-            PERSONAS[persona_now].append(all_file[i])
+            PERSONAS[persona_now].append(tuple(all_file[i].split(' ')))
             i += 1
             if i == len(all_file):
                 break
         i += 1
     print PERSONAS
+    
+
+def find_match_persona(arcana_key, expected_lvl):
+    candidates = PERSONAS[arcana_key]
+    return tuple(('', 0))  # TODO
 
 
 def fusion_persona(persona_1, persona_2, persona_3=None):
@@ -81,8 +86,11 @@ def fusion_persona(persona_1, persona_2, persona_3=None):
             result[1] = FUSION[(persona_2[1], persona_1[1])]
         else:
             result[1] = FUSION[(persona_1[1], persona_2[1])]
-        result[0] = 'Nome'
-        result[2] = 100
+        if persona_1[1] == persona_2[1]:
+            fusion_lvl = ((persona_1[2] + persona_2[2]) / 2) + 1
+        else:
+            fusion_lvl = (persona_1[2] + persona_2[2]) / 2            
+        result[0], result[2] = find_match_persona(result[1], fusion_lvl)
     return tuple(result)
 
 
