@@ -28,9 +28,14 @@ ARCANAS = {
     24: 'World',
     25: 'NA'
 }
-WEIGHT = {ARCANAS[i]: i for i in ARCANAS}
+WEIGHT = {}
 FUSION = {}
 PERSONAS = {}
+
+
+def make_weight():
+    for i in ARCANAS.items():
+        WEIGHT.update({i[1]: i[0]})
 
 
 def make_combinations():
@@ -61,6 +66,8 @@ def make_personas_dict(personas_list):
         while all_file[i]:
             PERSONAS[persona_now].append(all_file[i])
             i += 1
+            if i == len(all_file):
+                break
         i += 1
     print PERSONAS
 
@@ -101,6 +108,7 @@ def print_debug():
 if __name__ == '__main__':
     fusion_list = open("fusion_list.txt")
     personas_list = open("personas.txt")
+    make_weight()
     make_fusion_dict(fusion_list)
     make_personas_dict(personas_list)
     p1 = ('', 'Lovers', 0)
