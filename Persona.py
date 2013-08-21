@@ -1,6 +1,9 @@
 #Persona = (str(Nome), str(Arcana), int(Lvl))
 
-DEBUG = True
+from operator import itemgetter
+
+
+DEBUG = False
 ARCANAS = {
     1: 'Fool',
     2: 'Magician',
@@ -114,11 +117,16 @@ def find_match_persona(arcana_key, expected_lvl):
     return expected_persona
 
 
-def find_result_arcana(arcana_1, arcana_2, result):
+def find_result_arcana_normal_fusion(arcana_1, arcana_2, result):
     if WEIGHT[arcana_1] > WEIGHT[arcana_2]:
         result[1] = FUSION[(arcana_2, arcana_1)]
     else:
         result[1] = FUSION[(arcana_1, arcana_2)]
+
+
+def find_result_arcana_triangle_fusion(arcana_1, arcana_2, arcana_3, result):
+    find_result_arcana_normal_fusion(arcana_1, arcana_2, result)
+    result[1] = FUSION[(result[1], arcana_3)]
 
 
 def is_normal_same_fusion(arcana_1, arcana_2):
@@ -127,7 +135,7 @@ def is_normal_same_fusion(arcana_1, arcana_2):
     return False
 
 
-def calculate_result_lvl(persona_1, persona_2):
+def calculate_result_lvl_normal_fusion(persona_1, persona_2):
     fusion_lvl = (persona_1[2] + persona_2[2]) / 2
     if is_normal_same_fusion(persona_1[1], persona_2[1]):
         return fusion_lvl
@@ -136,17 +144,29 @@ def calculate_result_lvl(persona_1, persona_2):
 
 def normal_fusion(persona_1, persona_2):
     result = ['', '', 0]
-    find_result_arcana(persona_1[1], persona_2[1], result)
-    fusion_lvl = calculate_result_lvl(persona_1, persona_2)
+    find_result_arcana_normal_fusion(persona_1[1], persona_2[1], result)
+    fusion_lvl = calculate_result_lvl_normal_fusion(persona_1, persona_2)
     result[0], result[2] = find_match_persona(result[1], int(fusion_lvl))
+    return result
+
+
+def sort_persona_by_level(personas):
+    return sorted(personas, key=itemgetter(2))
+
+
+def triangle_fusion(persona_1, persona_2, persona_3):
+    result = ['', '', 0]
+    personas = sort_persona_by_level([persona_1, persona_2, persona_3])
+    find_result_arcana_triangle_fusion(personas[0][1], personas[1][1],
+                                       personas[2][1], result)
+
     return result
 
 
 def fusion_persona(persona_1, persona_2, persona_3=None):
     if persona_3:
-        # TODO
-        # result = triangle_fusion(persona_1, persona_2, persona_3)
-        return
+        result = triangle_fusion(persona_1, persona_2, persona_3)
+        return tuple(result)
     else:
         result = normal_fusion(persona_1, persona_2)
     return tuple(result)
@@ -208,6 +228,13 @@ if __name__ == '__main__':
     p2 = ('', 'Judgement', 23)
     print (fusion_persona(p1, p2))
     print (fusion_persona(p2, p1))
+    p1 = ('', 'Empress', 9)
+    p2 = ('', 'Justice', 49)
+    p3 = ('', 'Fool', 64)
+    print (fusion_persona(p1, p2, p3))
+    print (fusion_persona(p2, p1, p3))
+    print (fusion_persona(p3, p1, p2))
+    print (fusion_persona(p1, p3, p2)) 
     if DEBUG:
         print_debug()
     fusion_list.close()
