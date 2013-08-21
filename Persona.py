@@ -1,6 +1,6 @@
 #Persona = (str(Nome), str(Arcana), int(Lvl))
 
-DEBUG = True
+DEBUG = False
 ARCANAS = {
     1: 'Fool',
     2: 'Magician',
@@ -31,6 +31,13 @@ ARCANAS = {
 WEIGHT = {}
 FUSION = {}
 PERSONAS = {}
+SPECIAL_FUSION = {'Alice': ('Nebiros', 'Belial'),
+                  'Ardha': ('Parvati', 'Shiva'),
+                  'Beelzebub': ('Pazuzu', 'Belphegor', 'Belial', 'Mot', 'Seth', 'Baal Zebul'),
+                  'Black Frost': ('Jack Frost', 'Pyro Jack', 'King Frost', 'Pixie', 'Ghoul'),
+                  'Futsunushi': ('Ares', 'Triglav', 'Kin-ki', 'Atavaka', 'Neko Shogun'),
+                  'Kohryu': ('Gengu', 'Seiryu', 'Suzaku', 'Byakko'),
+                  }
 
 
 def make_weight():
@@ -40,8 +47,9 @@ def make_weight():
 
 def make_combinations():
     combinations = []
-    for i in ARCANAS.values():
-        for j in ARCANAS.values():
+    inter_list = [i for i in ARCANAS.values() if i != 'NA' and i != 'World']
+    for i in inter_list:
+        for j in inter_list:
             combinations.append(tuple((i, j)))
     return combinations
 
@@ -54,29 +62,39 @@ def make_fusion_dict(fusion_list):
         i += 1
 
 
-def make_personas_dict(personas_list):
+def file_to_list(personas_list):
     all_file = []
     for line in personas_list:
         all_file.append(line.strip())
+    return all_file
+
+
+def append_persona_to_list(name_lvl, persona_now):
+    lvl = name_lvl.pop()
+    name = ' '.join(name_lvl)
+    PERSONAS[persona_now].append(tuple((name, int(lvl))))
+
+
+def make_personas_dict(personas_list):
+    all_file = file_to_list(personas_list)
     i = 0
     while i < len(all_file):
-        persona_now = all_file[i].lower().capitalize()
+        persona_now = all_file[i].capitalize()
         PERSONAS.update({persona_now: []})
         i += 1
         while all_file[i]:
-            name_lvl = all_file[i].split(' ')
-            lvl = name_lvl.pop()
-            name = ' '.join(name_lvl)
-            PERSONAS[persona_now].append(tuple((name, int(lvl))))
+            append_persona_to_list(all_file[i].split(' '), persona_now)
             i += 1
             if i == len(all_file):
                 break
         i += 1
-    print (PERSONAS)
-    
+
 
 def find_match_persona(arcana_key, expected_lvl):
-    candidates = PERSONAS[arcana_key]
+    try:
+        candidates = PERSONAS[arcana_key]
+    except KeyError:
+        return tuple(('NA', 0))
     expected_persona = ''
     for persona in candidates:
         if persona[1] < expected_lvl:
@@ -84,20 +102,41 @@ def find_match_persona(arcana_key, expected_lvl):
     return expected_persona
 
 
-def fusion_persona(persona_1, persona_2, persona_3=None):
-    result = ['', '', 0]
-    if persona_3:
-        return  # TODO
+def find_result_arcana(arcana_1, arcana_2, result):
+    if WEIGHT[arcana_1] > WEIGHT[arcana_2]:
+        result[1] = FUSION[(arcana_2, arcana_1)]
     else:
-        if WEIGHT[persona_1[1]] > WEIGHT[persona_2[1]]:
-            result[1] = FUSION[(persona_2[1], persona_1[1])]
-        else:
-            result[1] = FUSION[(persona_1[1], persona_2[1])]
-        if persona_1[1] == persona_2[1]:
-            fusion_lvl = ((persona_1[2] + persona_2[2]) / 2) + 1
-        else:
-            fusion_lvl = (persona_1[2] + persona_2[2]) / 2            
-        result[0], result[2] = find_match_persona(result[1], int(fusion_lvl))
+        result[1] = FUSION[(arcana_1, arcana_2)]
+
+
+def is_normal_same_fusion(arcana_1, arcana_2):
+    if arcana_1 == arcana_2:
+        return True
+    return False
+
+
+def calculate_result_lvl(persona_1, persona_2):
+    fusion_lvl = (persona_1[2] + persona_2[2]) / 2
+    if is_normal_same_fusion(persona_1[1], persona_2[1]):
+        return fusion_lvl
+    return fusion_lvl + 1
+
+
+def normal_fusion(persona_1, persona_2):
+    result = ['', '', 0]
+    find_result_arcana(persona_1[1], persona_2[1], result)
+    fusion_lvl = calculate_result_lvl(persona_1, persona_2)
+    result[0], result[2] = find_match_persona(result[1], int(fusion_lvl))
+    return result
+
+
+def fusion_persona(persona_1, persona_2, persona_3=None):
+    if persona_3:
+        # TODO
+        # result = triangle_fusion(persona_1, persona_2, persona_3)
+        return
+    else:
+        result = normal_fusion(persona_1, persona_2)
     return tuple(result)
 
 
@@ -118,6 +157,7 @@ def print_debug():
         f1.write(str(l) + '\n')
     test_fusion_list()
     f1.close()
+    print (PERSONAS)
 
 
 if __name__ == '__main__':
@@ -128,6 +168,14 @@ if __name__ == '__main__':
     make_personas_dict(personas_list)
     p1 = ('', 'Lovers', 23)
     p2 = ('', 'Chariot', 23)
+    print (fusion_persona(p1, p2))
+    print (fusion_persona(p2, p1))
+    p1 = ('', 'Star', 23)
+    p2 = ('', 'Jester', 23)
+    print (fusion_persona(p1, p2))
+    print (fusion_persona(p2, p1))
+    p1 = ('', 'Strength', 23)
+    p2 = ('', 'Judgement', 23)
     print (fusion_persona(p1, p2))
     print (fusion_persona(p2, p1))
     if DEBUG:
