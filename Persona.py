@@ -1,6 +1,6 @@
 #Persona = (str(Nome), str(Arcana), int(Lvl))
 
-DEBUG = False
+DEBUG = True
 ARCANAS = {
     1: 'Fool',
     2: 'Magician',
@@ -36,7 +36,19 @@ SPECIAL_FUSION = {'Alice': ('Nebiros', 'Belial'),
                   'Beelzebub': ('Pazuzu', 'Belphegor', 'Belial', 'Mot', 'Seth', 'Baal Zebul'),
                   'Black Frost': ('Jack Frost', 'Pyro Jack', 'King Frost', 'Pixie', 'Ghoul'),
                   'Futsunushi': ('Ares', 'Triglav', 'Kin-ki', 'Atavaka', 'Neko Shogun'),
-                  'Kohryu': ('Gengu', 'Seiryu', 'Suzaku', 'Byakko'),
+                  'Kohryu': ('Genbu', 'Seiryu', 'Suzaku', 'Byakko'),
+                  'Lucifer': ('Ananta', 'Anubis', 'Trumpeter', 'Michael', 'Satan', 'Metatron'),
+                  'Mahakala': ('Matador', 'White Rider', 'Mother Harlot', 'Daisoujou', 'Hell Biker', 'Trumpeter'),
+                  'Neko Shogun': ('Saki Mitama', 'Ara Mitama', 'Kusi Mitama', 'Nigi Mitama'),
+                  'Norn': ('Atropos', 'Lachesis', 'Clotho'),
+                  'Ongyo-ki': ('Oni', 'Fuu-ki', 'Kin-ki', 'Sui-ki'),
+                  'Shiva': ('Rangda', 'Barong'),
+                  'Slime': ('Eligor', 'Nata Taishi'),
+                  'Tam Lin': ('Phoenix', 'Gdon', 'Yatagarasu', 'Narasimha'),
+                  'Trumpeter': ('Matador', 'White Rider', 'Daisoujou', 'Taotie', 'Narasimha'),
+                  'Ukobach': ('Lilim', 'Vetala'),
+                  'Yatsufusa': ('Makami', 'Orthrus', 'Mothman', 'Thoth', 'Narasimha'),
+                  'Yoshitsune': ('Masakado', 'Shiki-Ouji', 'Oukuninushi', 'Hachiman', 'Hitokoto-Nushi')
                   }
 
 
@@ -151,11 +163,29 @@ def test_fusion_list():
     f1.close()
 
 
+def test_special_fusion():
+    personas_list = []
+    for personas in PERSONAS.values():
+        personas_list.extend(personas)
+    personas_list = [i[0] for i in personas_list]
+    personas_set = set(personas_list)
+    print (sorted(list(personas_set)))
+
+    special_personas_list = []
+    for special_pesona in SPECIAL_FUSION.items():
+        special_personas_list.append(special_pesona[0])
+        special_personas_list.extend(list(special_pesona[1]))
+    for persona in special_personas_list:
+        if persona not in personas_set:
+            print ("ERRO:", persona)
+
+
 def print_debug():
     f1 = open("combina.txt", 'w')
     for l in FUSION.items():
         f1.write(str(l) + '\n')
     test_fusion_list()
+    test_special_fusion()
     f1.close()
     print (PERSONAS)
 
