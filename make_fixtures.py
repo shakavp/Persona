@@ -1,7 +1,7 @@
 from Persona import PERSONAS, is_special_fusion, make_personas_dict
 
 
-MODEL = ''
+MODEL = '"persona_fusion.Persona"'
 
 
 def make_json():
@@ -22,7 +22,7 @@ def make_json():
             fixture.write('            "arcana": "' + arcana + '",\n')
             fixture.write('            "level": ' + str(persona[1]) + ',\n')
             fixture.write('            "price": ' + str(0) + ',\n')
-            fixture.write('            "special": ' + str(special) + '\n')
+            fixture.write('            "special": "' + str(special) + '"\n')
             fixture.write('        }\n')
             fixture.write('    },\n')
             pk += 1
