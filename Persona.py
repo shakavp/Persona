@@ -1,9 +1,10 @@
 #Persona = (str(Nome), str(Arcana), int(Lvl))
 
 from operator import itemgetter
+from math import ceil
 
 
-DEBUG = False
+DEBUG = True
 ARCANAS = {
     1: 'Fool',
     2: 'Magician',
@@ -105,16 +106,51 @@ def make_personas_dict(personas_list):
         i += 1
 
 
+def is_special_fusion(persona):
+    if persona in SPECIAL_FUSION.keys():
+        return True
+    return False
+
+
+def find_lower_persona_exclude_specials(candidates, expected_persona):
+    persona_index = len(candidates) - 1
+    while persona_index >= 0:
+        if not is_special_fusion(candidates[persona_index][0]):
+            break
+        persona_index -= 1
+    return candidates[persona_index]
+
+
+def find_upper_persona_exclude_specials(candidates, expected_persona):
+    persona_index = candidates.index(expected_persona) + 1
+    while persona_index < len(candidates):
+        if not is_special_fusion(candidates[persona_index][0]):
+            break
+        persona_index += 1
+    if persona_index == len(candidates):
+        return candidates[persona_index-1]
+    return candidates[persona_index]
+
+
+def find_persona_exclude_specials(candidates, expected_persona):
+    if expected_persona == candidates[-1]:
+        return find_lower_persona_exclude_specials(candidates, expected_persona)
+    return find_upper_persona_exclude_specials(candidates, expected_persona)
+
+
 def find_match_persona(arcana_key, expected_lvl):
     try:
         candidates = PERSONAS[arcana_key]
     except KeyError:
         return tuple(('NA', 0))
-    expected_persona = ''
-    for persona in candidates:
+    expected_persona = candidates[0]
+    i = 0
+    while i < len(candidates):
+        persona = candidates[i]
         if persona[1] < expected_lvl:
             expected_persona = persona
-    return expected_persona
+        i += 1
+    return find_persona_exclude_specials(candidates, expected_persona)
 
 
 def find_result_arcana_normal_fusion(arcana_1, arcana_2, result):
@@ -154,12 +190,20 @@ def sort_persona_by_level(personas):
     return sorted(personas, key=itemgetter(2))
 
 
+def calculate_result_lvl_triangle_fusion(persona_1, persona_2, persona_3):
+    float_sum = (persona_1[2] + persona_2[2] + persona_3[2])/3.0
+    float_sum += 5
+    return int(ceil(float_sum))
+
+
 def triangle_fusion(persona_1, persona_2, persona_3):
     result = ['', '', 0]
     personas = sort_persona_by_level([persona_1, persona_2, persona_3])
     find_result_arcana_triangle_fusion(personas[0][1], personas[1][1],
                                        personas[2][1], result)
-
+    fusion_lvl = calculate_result_lvl_triangle_fusion(persona_1, persona_2,
+                                                      persona_3)
+    result[0], result[2] = find_match_persona(result[1], int(fusion_lvl))
     return result
 
 
@@ -167,8 +211,7 @@ def fusion_persona(persona_1, persona_2, persona_3=None):
     if persona_3:
         result = triangle_fusion(persona_1, persona_2, persona_3)
         return tuple(result)
-    else:
-        result = normal_fusion(persona_1, persona_2)
+    result = normal_fusion(persona_1, persona_2)
     return tuple(result)
 
 
@@ -234,7 +277,7 @@ if __name__ == '__main__':
     print (fusion_persona(p1, p2, p3))
     print (fusion_persona(p2, p1, p3))
     print (fusion_persona(p3, p1, p2))
-    print (fusion_persona(p1, p3, p2)) 
+    print (fusion_persona(p1, p3, p2))
     if DEBUG:
         print_debug()
     fusion_list.close()

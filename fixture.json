@@ -1,0 +1,2257 @@
+[
+    {
+        "model": ,
+        "pk": 1,
+        "fields": {
+            "name": "Omoikane",
+            "arcana": "Hierophant",
+            "level": 7,
+            "price": 0,
+            "special": False
+        }
+    },
+    {
+        "model": ,
+        "pk": 2,
+        "fields": {
+            "name": "Anzu",
+            "arcana": "Hierophant",
+            "level": 15,
+            "price": 0,
+            "special": False
+        }
+    },
+    {
+        "model": ,
+        "pk": 3,
+        "fields": {
+            "name": "Shiisaa",
+            "arcana": "Hierophant",
+            "level": 21,
+            "price": 0,
+            "special": False
+        }
+    },
+    {
+        "model": ,
+        "pk": 4,
+        "fields": {
+            "name": "Unicorn",
+            "arcana": "Hierophant",
+            "level": 29,
+            "price": 0,
+            "special": False
+        }
+    },
+    {
+        "model": ,
+        "pk": 5,
+        "fields": {
+            "name": "Flauros",
+            "arcana": "Hierophant",
+            "level": 36,
+            "price": 0,
+            "special": False
+        }
+    },
+    {
+        "model": ,
+        "pk": 6,
+        "fields": {
+            "name": "Hokuto Seikun",
+            "arcana": "Hierophant",
+            "level": 45,
+            "price": 0,
+            "special": False
+        }
+    },
+    {
+        "model": ,
+        "pk": 7,
+        "fields": {
+            "name": "Cerberus",
+            "arcana": "Hierophant",
+            "level": 52,
+            "price": 0,
+            "special": False
+        }
+    },
+    {
+        "model": ,
+        "pk": 8,
+        "fields": {
+            "name": "Daisoujou",
+            "arcana": "Hierophant",
+            "level": 60,
+            "price": 0,
+            "special": False
+        }
+    },
+    {
+        "model": ,
+        "pk": 9,
+        "fields": {
+            "name": "Hachiman",
+            "arcana": "Hierophant",
+            "level": 70,
+            "price": 0,
+            "special": False
+        }
+    },
+    {
+        "model": ,
+        "pk": 10,
+        "fields": {
+            "name": "Kohryu",
+            "arcana": "Hierophant",
+            "level": 76,
+            "price": 0,
+            "special": True
+        }
+    },
+    {
+        "model": ,
+        "pk": 11,
+        "fields": {
+            "name": "Ukobach",
+            "arcana": "Devil",
+            "level": 3,
+            "price": 0,
+            "special": True
+        }
+    },
+    {
+        "model": ,
+        "pk": 12,
+        "fields": {
+            "name": "Lilim",
+            "arcana": "Devil",
+            "level": 10,
+            "price": 0,
+            "special": False
+        }
+    },
+    {
+        "model": ,
+        "pk": 13,
+        "fields": {
+            "name": "Vetala",
+            "arcana": "Devil",
+            "level": 19,
+            "price": 0,
+            "special": False
+        }
+    },
+    {
+        "model": ,
+        "pk": 14,
+        "fields": {
+            "name": "Incubus",
+            "arcana": "Devil",
+            "level": 28,
+            "price": 0,
+            "special": False
+        }
+    },
+    {
+        "model": ,
+        "pk": 15,
+        "fields": {
+            "name": "Pazuzu",
+            "arcana": "Devil",
+            "level": 37,
+            "price": 0,
+            "special": False
+        }
+    },
+    {
+        "model": ,
+        "pk": 16,
+        "fields": {
+            "name": "Succubus",
+            "arcana": "Devil",
+            "level": 44,
+            "price": 0,
+            "special": False
+        }
+    },
+    {
+        "model": ,
+        "pk": 17,
+        "fields": {
+            "name": "Lilith",
+            "arcana": "Devil",
+            "level": 53,
+            "price": 0,
+            "special": False
+        }
+    },
+    {
+        "model": ,
+        "pk": 18,
+        "fields": {
+            "name": "Belphegor",
+            "arcana": "Devil",
+            "level": 61,
+            "price": 0,
+            "special": False
+        }
+    },
+    {
+        "model": ,
+        "pk": 19,
+        "fields": {
+            "name": "Belial",
+            "arcana": "Devil",
+            "level": 68,
+            "price": 0,
+            "special": False
+        }
+    },
+    {
+        "model": ,
+        "pk": 20,
+        "fields": {
+            "name": "Beelzebub",
+            "arcana": "Devil",
+            "level": 81,
+            "price": 0,
+            "special": True
+        }
+    },
+    {
+        "model": ,
+        "pk": 21,
+        "fields": {
+            "name": "Fortuna",
+            "arcana": "Fortune",
+            "level": 35,
+            "price": 0,
+            "special": False
+        }
+    },
+    {
+        "model": ,
+        "pk": 22,
+        "fields": {
+            "name": "Clotho",
+            "arcana": "Fortune",
+            "level": 44,
+            "price": 0,
+            "special": False
+        }
+    },
+    {
+        "model": ,
+        "pk": 23,
+        "fields": {
+            "name": "Lachesis",
+            "arcana": "Fortune",
+            "level": 51,
+            "price": 0,
+            "special": False
+        }
+    },
+    {
+        "model": ,
+        "pk": 24,
+        "fields": {
+            "name": "Ananta",
+            "arcana": "Fortune",
+            "level": 58,
+            "price": 0,
+            "special": False
+        }
+    },
+    {
+        "model": ,
+        "pk": 25,
+        "fields": {
+            "name": "Atropos",
+            "arcana": "Fortune",
+            "level": 65,
+            "price": 0,
+            "special": False
+        }
+    },
+    {
+        "model": ,
+        "pk": 26,
+        "fields": {
+            "name": "Norn",
+            "arcana": "Fortune",
+            "level": 72,
+            "price": 0,
+            "special": True
+        }
+    },
+    {
+        "model": ,
+        "pk": 27,
+        "fields": {
+            "name": "Angel",
+            "arcana": "Justice",
+            "level": 4,
+            "price": 0,
+            "special": False
+        }
+    },
+    {
+        "model": ,
+        "pk": 28,
+        "fields": {
+            "name": "Archangel",
+            "arcana": "Justice",
+            "level": 11,
+            "price": 0,
+            "special": False
+        }
+    },
+    {
+        "model": ,
+        "pk": 29,
+        "fields": {
+            "name": "Principality",
+            "arcana": "Justice",
+            "level": 19,
+            "price": 0,
+            "special": False
+        }
+    },
+    {
+        "model": ,
+        "pk": 30,
+        "fields": {
+            "name": "Power",
+            "arcana": "Justice",
+            "level": 27,
+            "price": 0,
+            "special": False
+        }
+    },
+    {
+        "model": ,
+        "pk": 31,
+        "fields": {
+            "name": "Virtue",
+            "arcana": "Justice",
+            "level": 33,
+            "price": 0,
+            "special": False
+        }
+    },
+    {
+        "model": ,
+        "pk": 32,
+        "fields": {
+            "name": "Dominion",
+            "arcana": "Justice",
+            "level": 38,
+            "price": 0,
+            "special": False
+        }
+    },
+    {
+        "model": ,
+        "pk": 33,
+        "fields": {
+            "name": "Throne",
+            "arcana": "Justice",
+            "level": 49,
+            "price": 0,
+            "special": False
+        }
+    },
+    {
+        "model": ,
+        "pk": 34,
+        "fields": {
+            "name": "Uriel",
+            "arcana": "Justice",
+            "level": 58,
+            "price": 0,
+            "special": False
+        }
+    },
+    {
+        "model": ,
+        "pk": 35,
+        "fields": {
+            "name": "Melchizedek",
+            "arcana": "Justice",
+            "level": 66,
+            "price": 0,
+            "special": False
+        }
+    },
+    {
+        "model": ,
+        "pk": 36,
+        "fields": {
+            "name": "Sraosha",
+            "arcana": "Justice",
+            "level": 74,
+            "price": 0,
+            "special": False
+        }
+    },
+    {
+        "model": ,
+        "pk": 37,
+        "fields": {
+            "name": "Cu Sith",
+            "arcana": "Sun",
+            "level": 10,
+            "price": 0,
+            "special": False
+        }
+    },
+    {
+        "model": ,
+        "pk": 38,
+        "fields": {
+            "name": "Phoenix",
+            "arcana": "Sun",
+            "level": 20,
+            "price": 0,
+            "special": False
+        }
+    },
+    {
+        "model": ,
+        "pk": 39,
+        "fields": {
+            "name": "Gdon",
+            "arcana": "Sun",
+            "level": 31,
+            "price": 0,
+            "special": False
+        }
+    },
+    {
+        "model": ,
+        "pk": 40,
+        "fields": {
+            "name": "Yatagarasu",
+            "arcana": "Sun",
+            "level": 40,
+            "price": 0,
+            "special": False
+        }
+    },
+    {
+        "model": ,
+        "pk": 41,
+        "fields": {
+            "name": "Narasimha",
+            "arcana": "Sun",
+            "level": 47,
+            "price": 0,
+            "special": False
+        }
+    },
+    {
+        "model": ,
+        "pk": 42,
+        "fields": {
+            "name": "Tam Lin",
+            "arcana": "Sun",
+            "level": 53,
+            "price": 0,
+            "special": True
+        }
+    },
+    {
+        "model": ,
+        "pk": 43,
+        "fields": {
+            "name": "Jatayu",
+            "arcana": "Sun",
+            "level": 61,
+            "price": 0,
+            "special": False
+        }
+    },
+    {
+        "model": ,
+        "pk": 44,
+        "fields": {
+            "name": "Horus",
+            "arcana": "Sun",
+            "level": 68,
+            "price": 0,
+            "special": False
+        }
+    },
+    {
+        "model": ,
+        "pk": 45,
+        "fields": {
+            "name": "Suparna",
+            "arcana": "Sun",
+            "level": 77,
+            "price": 0,
+            "special": False
+        }
+    },
+    {
+        "model": ,
+        "pk": 46,
+        "fields": {
+            "name": "Asura",
+            "arcana": "Sun",
+            "level": 86,
+            "price": 0,
+            "special": False
+        }
+    },
+    {
+        "model": ,
+        "pk": 47,
+        "fields": {
+            "name": "Saki Mitama",
+            "arcana": "Priestess",
+            "level": 11,
+            "price": 0,
+            "special": False
+        }
+    },
+    {
+        "model": ,
+        "pk": 48,
+        "fields": {
+            "name": "Sarasvati",
+            "arcana": "Priestess",
+            "level": 17,
+            "price": 0,
+            "special": False
+        }
+    },
+    {
+        "model": ,
+        "pk": 49,
+        "fields": {
+            "name": "High Pixie",
+            "arcana": "Priestess",
+            "level": 22,
+            "price": 0,
+            "special": False
+        }
+    },
+    {
+        "model": ,
+        "pk": 50,
+        "fields": {
+            "name": "Ganga",
+            "arcana": "Priestess",
+            "level": 29,
+            "price": 0,
+            "special": False
+        }
+    },
+    {
+        "model": ,
+        "pk": 51,
+        "fields": {
+            "name": "Parvati",
+            "arcana": "Priestess",
+            "level": 37,
+            "price": 0,
+            "special": False
+        }
+    },
+    {
+        "model": ,
+        "pk": 52,
+        "fields": {
+            "name": "Kikuri-Hime",
+            "arcana": "Priestess",
+            "level": 48,
+            "price": 0,
+            "special": False
+        }
+    },
+    {
+        "model": ,
+        "pk": 53,
+        "fields": {
+            "name": "Hariti",
+            "arcana": "Priestess",
+            "level": 59,
+            "price": 0,
+            "special": False
+        }
+    },
+    {
+        "model": ,
+        "pk": 54,
+        "fields": {
+            "name": "Tzitzimitl",
+            "arcana": "Priestess",
+            "level": 70,
+            "price": 0,
+            "special": False
+        }
+    },
+    {
+        "model": ,
+        "pk": 55,
+        "fields": {
+            "name": "Scathach",
+            "arcana": "Priestess",
+            "level": 79,
+            "price": 0,
+            "special": False
+        }
+    },
+    {
+        "model": ,
+        "pk": 56,
+        "fields": {
+            "name": "Andra",
+            "arcana": "Moon",
+            "level": 20,
+            "price": 0,
+            "special": False
+        }
+    },
+    {
+        "model": ,
+        "pk": 57,
+        "fields": {
+            "name": "Nozuchi",
+            "arcana": "Moon",
+            "level": 27,
+            "price": 0,
+            "special": False
+        }
+    },
+    {
+        "model": ,
+        "pk": 58,
+        "fields": {
+            "name": "Yamata-no-Orochi",
+            "arcana": "Moon",
+            "level": 34,
+            "price": 0,
+            "special": False
+        }
+    },
+    {
+        "model": ,
+        "pk": 59,
+        "fields": {
+            "name": "Alraune",
+            "arcana": "Moon",
+            "level": 41,
+            "price": 0,
+            "special": False
+        }
+    },
+    {
+        "model": ,
+        "pk": 60,
+        "fields": {
+            "name": "Girimehkala",
+            "arcana": "Moon",
+            "level": 48,
+            "price": 0,
+            "special": False
+        }
+    },
+    {
+        "model": ,
+        "pk": 61,
+        "fields": {
+            "name": "Sui-ki",
+            "arcana": "Moon",
+            "level": 57,
+            "price": 0,
+            "special": False
+        }
+    },
+    {
+        "model": ,
+        "pk": 62,
+        "fields": {
+            "name": "Seth",
+            "arcana": "Moon",
+            "level": 68,
+            "price": 0,
+            "special": False
+        }
+    },
+    {
+        "model": ,
+        "pk": 63,
+        "fields": {
+            "name": "Baal Zebul",
+            "arcana": "Moon",
+            "level": 77,
+            "price": 0,
+            "special": False
+        }
+    },
+    {
+        "model": ,
+        "pk": 64,
+        "fields": {
+            "name": "Sandalphon",
+            "arcana": "Moon",
+            "level": 84,
+            "price": 0,
+            "special": False
+        }
+    },
+    {
+        "model": ,
+        "pk": 65,
+        "fields": {
+            "name": "Queen Mab",
+            "arcana": "Lovers",
+            "level": 25,
+            "price": 0,
+            "special": False
+        }
+    },
+    {
+        "model": ,
+        "pk": 66,
+        "fields": {
+            "name": "Undine",
+            "arcana": "Lovers",
+            "level": 33,
+            "price": 0,
+            "special": False
+        }
+    },
+    {
+        "model": ,
+        "pk": 67,
+        "fields": {
+            "name": "Leanan Sidhe",
+            "arcana": "Lovers",
+            "level": 42,
+            "price": 0,
+            "special": False
+        }
+    },
+    {
+        "model": ,
+        "pk": 68,
+        "fields": {
+            "name": "Raphael",
+            "arcana": "Lovers",
+            "level": 53,
+            "price": 0,
+            "special": False
+        }
+    },
+    {
+        "model": ,
+        "pk": 69,
+        "fields": {
+            "name": "Cybele",
+            "arcana": "Lovers",
+            "level": 64,
+            "price": 0,
+            "special": False
+        }
+    },
+    {
+        "model": ,
+        "pk": 70,
+        "fields": {
+            "name": "lshtar",
+            "arcana": "Lovers",
+            "level": 71,
+            "price": 0,
+            "special": False
+        }
+    },
+    {
+        "model": ,
+        "pk": 71,
+        "fields": {
+            "name": "Ghoul",
+            "arcana": "Death",
+            "level": 9,
+            "price": 0,
+            "special": False
+        }
+    },
+    {
+        "model": ,
+        "pk": 72,
+        "fields": {
+            "name": "Mokoi",
+            "arcana": "Death",
+            "level": 14,
+            "price": 0,
+            "special": False
+        }
+    },
+    {
+        "model": ,
+        "pk": 73,
+        "fields": {
+            "name": "Matador",
+            "arcana": "Death",
+            "level": 24,
+            "price": 0,
+            "special": False
+        }
+    },
+    {
+        "model": ,
+        "pk": 74,
+        "fields": {
+            "name": "Samael",
+            "arcana": "Death",
+            "level": 36,
+            "price": 0,
+            "special": False
+        }
+    },
+    {
+        "model": ,
+        "pk": 75,
+        "fields": {
+            "name": "Mot",
+            "arcana": "Death",
+            "level": 46,
+            "price": 0,
+            "special": False
+        }
+    },
+    {
+        "model": ,
+        "pk": 76,
+        "fields": {
+            "name": "White Rider",
+            "arcana": "Death",
+            "level": 58,
+            "price": 0,
+            "special": False
+        }
+    },
+    {
+        "model": ,
+        "pk": 77,
+        "fields": {
+            "name": "Alice",
+            "arcana": "Death",
+            "level": 72,
+            "price": 0,
+            "special": True
+        }
+    },
+    {
+        "model": ,
+        "pk": 78,
+        "fields": {
+            "name": "Mahakala",
+            "arcana": "Death",
+            "level": 78,
+            "price": 0,
+            "special": True
+        }
+    },
+    {
+        "model": ,
+        "pk": 79,
+        "fields": {
+            "name": "Sandman",
+            "arcana": "Strength",
+            "level": 5,
+            "price": 0,
+            "special": False
+        }
+    },
+    {
+        "model": ,
+        "pk": 80,
+        "fields": {
+            "name": "Valkyrie",
+            "arcana": "Strength",
+            "level": 8,
+            "price": 0,
+            "special": False
+        }
+    },
+    {
+        "model": ,
+        "pk": 81,
+        "fields": {
+            "name": "Titan",
+            "arcana": "Strength",
+            "level": 14,
+            "price": 0,
+            "special": False
+        }
+    },
+    {
+        "model": ,
+        "pk": 82,
+        "fields": {
+            "name": "Rakshasa",
+            "arcana": "Strength",
+            "level": 23,
+            "price": 0,
+            "special": False
+        }
+    },
+    {
+        "model": ,
+        "pk": 83,
+        "fields": {
+            "name": "Kusi Mitama",
+            "arcana": "Strength",
+            "level": 28,
+            "price": 0,
+            "special": False
+        }
+    },
+    {
+        "model": ,
+        "pk": 84,
+        "fields": {
+            "name": "Oni",
+            "arcana": "Strength",
+            "level": 30,
+            "price": 0,
+            "special": False
+        }
+    },
+    {
+        "model": ,
+        "pk": 85,
+        "fields": {
+            "name": "Hanuman",
+            "arcana": "Strength",
+            "level": 42,
+            "price": 0,
+            "special": False
+        }
+    },
+    {
+        "model": ,
+        "pk": 86,
+        "fields": {
+            "name": "Kali",
+            "arcana": "Strength",
+            "level": 50,
+            "price": 0,
+            "special": False
+        }
+    },
+    {
+        "model": ,
+        "pk": 87,
+        "fields": {
+            "name": "Siegfried",
+            "arcana": "Strength",
+            "level": 63,
+            "price": 0,
+            "special": False
+        }
+    },
+    {
+        "model": ,
+        "pk": 88,
+        "fields": {
+            "name": "Zaou-Gongen",
+            "arcana": "Strength",
+            "level": 90,
+            "price": 0,
+            "special": False
+        }
+    },
+    {
+        "model": ,
+        "pk": 89,
+        "fields": {
+            "name": "Apsaras",
+            "arcana": "Temperance",
+            "level": 4,
+            "price": 0,
+            "special": False
+        }
+    },
+    {
+        "model": ,
+        "pk": 90,
+        "fields": {
+            "name": "Sylph",
+            "arcana": "Temperance",
+            "level": 11,
+            "price": 0,
+            "special": False
+        }
+    },
+    {
+        "model": ,
+        "pk": 91,
+        "fields": {
+            "name": "Xiezhai",
+            "arcana": "Temperance",
+            "level": 16,
+            "price": 0,
+            "special": False
+        }
+    },
+    {
+        "model": ,
+        "pk": 92,
+        "fields": {
+            "name": "Nigi Mitama",
+            "arcana": "Temperance",
+            "level": 23,
+            "price": 0,
+            "special": False
+        }
+    },
+    {
+        "model": ,
+        "pk": 93,
+        "fields": {
+            "name": "Mithra",
+            "arcana": "Temperance",
+            "level": 31,
+            "price": 0,
+            "special": False
+        }
+    },
+    {
+        "model": ,
+        "pk": 94,
+        "fields": {
+            "name": "Genbu",
+            "arcana": "Temperance",
+            "level": 40,
+            "price": 0,
+            "special": False
+        }
+    },
+    {
+        "model": ,
+        "pk": 95,
+        "fields": {
+            "name": "Seiryu",
+            "arcana": "Temperance",
+            "level": 47,
+            "price": 0,
+            "special": False
+        }
+    },
+    {
+        "model": ,
+        "pk": 96,
+        "fields": {
+            "name": "Suzaku",
+            "arcana": "Temperance",
+            "level": 54,
+            "price": 0,
+            "special": False
+        }
+    },
+    {
+        "model": ,
+        "pk": 97,
+        "fields": {
+            "name": "Byakko",
+            "arcana": "Temperance",
+            "level": 62,
+            "price": 0,
+            "special": False
+        }
+    },
+    {
+        "model": ,
+        "pk": 98,
+        "fields": {
+            "name": "Yurlungur",
+            "arcana": "Temperance",
+            "level": 69,
+            "price": 0,
+            "special": False
+        }
+    },
+    {
+        "model": ,
+        "pk": 99,
+        "fields": {
+            "name": "Vishnu",
+            "arcana": "Temperance",
+            "level": 73,
+            "price": 0,
+            "special": False
+        }
+    },
+    {
+        "model": ,
+        "pk": 100,
+        "fields": {
+            "name": "Taotie",
+            "arcana": "Tower",
+            "level": 35,
+            "price": 0,
+            "special": False
+        }
+    },
+    {
+        "model": ,
+        "pk": 101,
+        "fields": {
+            "name": "Cu Chulainn",
+            "arcana": "Tower",
+            "level": 46,
+            "price": 0,
+            "special": False
+        }
+    },
+    {
+        "model": ,
+        "pk": 102,
+        "fields": {
+            "name": "Abaddon",
+            "arcana": "Tower",
+            "level": 55,
+            "price": 0,
+            "special": False
+        }
+    },
+    {
+        "model": ,
+        "pk": 103,
+        "fields": {
+            "name": "Mara",
+            "arcana": "Tower",
+            "level": 62,
+            "price": 0,
+            "special": False
+        }
+    },
+    {
+        "model": ,
+        "pk": 104,
+        "fields": {
+            "name": "Masakado",
+            "arcana": "Tower",
+            "level": 69,
+            "price": 0,
+            "special": False
+        }
+    },
+    {
+        "model": ,
+        "pk": 105,
+        "fields": {
+            "name": "Yoshitsune",
+            "arcana": "Tower",
+            "level": 75,
+            "price": 0,
+            "special": True
+        }
+    },
+    {
+        "model": ,
+        "pk": 106,
+        "fields": {
+            "name": "Shiva",
+            "arcana": "Tower",
+            "level": 80,
+            "price": 0,
+            "special": True
+        }
+    },
+    {
+        "model": ,
+        "pk": 107,
+        "fields": {
+            "name": "Oberon",
+            "arcana": "Emperor",
+            "level": 12,
+            "price": 0,
+            "special": False
+        }
+    },
+    {
+        "model": ,
+        "pk": 108,
+        "fields": {
+            "name": "King Frost",
+            "arcana": "Emperor",
+            "level": 22,
+            "price": 0,
+            "special": False
+        }
+    },
+    {
+        "model": ,
+        "pk": 109,
+        "fields": {
+            "name": "Sentanta",
+            "arcana": "Emperor",
+            "level": 34,
+            "price": 0,
+            "special": False
+        }
+    },
+    {
+        "model": ,
+        "pk": 110,
+        "fields": {
+            "name": "Oukuninushi",
+            "arcana": "Emperor",
+            "level": 41,
+            "price": 0,
+            "special": False
+        }
+    },
+    {
+        "model": ,
+        "pk": 111,
+        "fields": {
+            "name": "Thoth",
+            "arcana": "Emperor",
+            "level": 45,
+            "price": 0,
+            "special": False
+        }
+    },
+    {
+        "model": ,
+        "pk": 112,
+        "fields": {
+            "name": "Pabilsag",
+            "arcana": "Emperor",
+            "level": 51,
+            "price": 0,
+            "special": False
+        }
+    },
+    {
+        "model": ,
+        "pk": 113,
+        "fields": {
+            "name": "Barong",
+            "arcana": "Emperor",
+            "level": 65,
+            "price": 0,
+            "special": False
+        }
+    },
+    {
+        "model": ,
+        "pk": 114,
+        "fields": {
+            "name": "Odin",
+            "arcana": "Emperor",
+            "level": 74,
+            "price": 0,
+            "special": False
+        }
+    },
+    {
+        "model": ,
+        "pk": 115,
+        "fields": {
+            "name": "Forneus",
+            "arcana": "Hermit",
+            "level": 6,
+            "price": 0,
+            "special": False
+        }
+    },
+    {
+        "model": ,
+        "pk": 116,
+        "fields": {
+            "name": "Ippon-Datara",
+            "arcana": "Hermit",
+            "level": 17,
+            "price": 0,
+            "special": False
+        }
+    },
+    {
+        "model": ,
+        "pk": 117,
+        "fields": {
+            "name": "Lamia",
+            "arcana": "Hermit",
+            "level": 26,
+            "price": 0,
+            "special": False
+        }
+    },
+    {
+        "model": ,
+        "pk": 118,
+        "fields": {
+            "name": "Mothman",
+            "arcana": "Hermit",
+            "level": 33,
+            "price": 0,
+            "special": False
+        }
+    },
+    {
+        "model": ,
+        "pk": 119,
+        "fields": {
+            "name": "Hitokoto-Nushi",
+            "arcana": "Hermit",
+            "level": 41,
+            "price": 0,
+            "special": False
+        }
+    },
+    {
+        "model": ,
+        "pk": 120,
+        "fields": {
+            "name": "Kurama Tengu",
+            "arcana": "Hermit",
+            "level": 48,
+            "price": 0,
+            "special": False
+        }
+    },
+    {
+        "model": ,
+        "pk": 121,
+        "fields": {
+            "name": "Niddhoggr",
+            "arcana": "Hermit",
+            "level": 55,
+            "price": 0,
+            "special": False
+        }
+    },
+    {
+        "model": ,
+        "pk": 122,
+        "fields": {
+            "name": "Nebiros",
+            "arcana": "Hermit",
+            "level": 63,
+            "price": 0,
+            "special": False
+        }
+    },
+    {
+        "model": ,
+        "pk": 123,
+        "fields": {
+            "name": "Arahabaki",
+            "arcana": "Hermit",
+            "level": 73,
+            "price": 0,
+            "special": False
+        }
+    },
+    {
+        "model": ,
+        "pk": 124,
+        "fields": {
+            "name": "Ongyo-ki",
+            "arcana": "Hermit",
+            "level": 82,
+            "price": 0,
+            "special": True
+        }
+    },
+    {
+        "model": ,
+        "pk": 125,
+        "fields": {
+            "name": "Izanagi",
+            "arcana": "Fool",
+            "level": 1,
+            "price": 0,
+            "special": False
+        }
+    },
+    {
+        "model": ,
+        "pk": 126,
+        "fields": {
+            "name": "Yomotsu-Shikome",
+            "arcana": "Fool",
+            "level": 7,
+            "price": 0,
+            "special": False
+        }
+    },
+    {
+        "model": ,
+        "pk": 127,
+        "fields": {
+            "name": "Obariyon",
+            "arcana": "Fool",
+            "level": 13,
+            "price": 0,
+            "special": False
+        }
+    },
+    {
+        "model": ,
+        "pk": 128,
+        "fields": {
+            "name": "Legion",
+            "arcana": "Fool",
+            "level": 21,
+            "price": 0,
+            "special": False
+        }
+    },
+    {
+        "model": ,
+        "pk": 129,
+        "fields": {
+            "name": "Ose",
+            "arcana": "Fool",
+            "level": 31,
+            "price": 0,
+            "special": False
+        }
+    },
+    {
+        "model": ,
+        "pk": 130,
+        "fields": {
+            "name": "Black Frost",
+            "arcana": "Fool",
+            "level": 38,
+            "price": 0,
+            "special": True
+        }
+    },
+    {
+        "model": ,
+        "pk": 131,
+        "fields": {
+            "name": "Decarabia",
+            "arcana": "Fool",
+            "level": 46,
+            "price": 0,
+            "special": False
+        }
+    },
+    {
+        "model": ,
+        "pk": 132,
+        "fields": {
+            "name": "Shiki-Ouji",
+            "arcana": "Fool",
+            "level": 56,
+            "price": 0,
+            "special": False
+        }
+    },
+    {
+        "model": ,
+        "pk": 133,
+        "fields": {
+            "name": "Loki",
+            "arcana": "Fool",
+            "level": 64,
+            "price": 0,
+            "special": False
+        }
+    },
+    {
+        "model": ,
+        "pk": 134,
+        "fields": {
+            "name": "Anubis",
+            "arcana": "Judgement",
+            "level": 59,
+            "price": 0,
+            "special": False
+        }
+    },
+    {
+        "model": ,
+        "pk": 135,
+        "fields": {
+            "name": "Trumpeter",
+            "arcana": "Judgement",
+            "level": 67,
+            "price": 0,
+            "special": True
+        }
+    },
+    {
+        "model": ,
+        "pk": 136,
+        "fields": {
+            "name": "Michael",
+            "arcana": "Judgement",
+            "level": 72,
+            "price": 0,
+            "special": False
+        }
+    },
+    {
+        "model": ,
+        "pk": 137,
+        "fields": {
+            "name": "Satan",
+            "arcana": "Judgement",
+            "level": 76,
+            "price": 0,
+            "special": False
+        }
+    },
+    {
+        "model": ,
+        "pk": 138,
+        "fields": {
+            "name": "Metatron",
+            "arcana": "Judgement",
+            "level": 83,
+            "price": 0,
+            "special": False
+        }
+    },
+    {
+        "model": ,
+        "pk": 139,
+        "fields": {
+            "name": "Ardha",
+            "arcana": "Judgement",
+            "level": 90,
+            "price": 0,
+            "special": True
+        }
+    },
+    {
+        "model": ,
+        "pk": 140,
+        "fields": {
+            "name": "Lucifer",
+            "arcana": "Judgement",
+            "level": 93,
+            "price": 0,
+            "special": True
+        }
+    },
+    {
+        "model": ,
+        "pk": 141,
+        "fields": {
+            "name": "Slime",
+            "arcana": "Chariot",
+            "level": 2,
+            "price": 0,
+            "special": True
+        }
+    },
+    {
+        "model": ,
+        "pk": 142,
+        "fields": {
+            "name": "Nata Taishi",
+            "arcana": "Chariot",
+            "level": 6,
+            "price": 0,
+            "special": False
+        }
+    },
+    {
+        "model": ,
+        "pk": 143,
+        "fields": {
+            "name": "Eligor",
+            "arcana": "Chariot",
+            "level": 12,
+            "price": 0,
+            "special": False
+        }
+    },
+    {
+        "model": ,
+        "pk": 144,
+        "fields": {
+            "name": "Ara Mitama",
+            "arcana": "Chariot",
+            "level": 18,
+            "price": 0,
+            "special": False
+        }
+    },
+    {
+        "model": ,
+        "pk": 145,
+        "fields": {
+            "name": "Ares",
+            "arcana": "Chariot",
+            "level": 25,
+            "price": 0,
+            "special": False
+        }
+    },
+    {
+        "model": ,
+        "pk": 146,
+        "fields": {
+            "name": "Triglav",
+            "arcana": "Chariot",
+            "level": 43,
+            "price": 0,
+            "special": False
+        }
+    },
+    {
+        "model": ,
+        "pk": 147,
+        "fields": {
+            "name": "Kin-ki",
+            "arcana": "Chariot",
+            "level": 54,
+            "price": 0,
+            "special": False
+        }
+    },
+    {
+        "model": ,
+        "pk": 148,
+        "fields": {
+            "name": "Thor",
+            "arcana": "Chariot",
+            "level": 65,
+            "price": 0,
+            "special": False
+        }
+    },
+    {
+        "model": ,
+        "pk": 149,
+        "fields": {
+            "name": "Atavaka",
+            "arcana": "Chariot",
+            "level": 72,
+            "price": 0,
+            "special": False
+        }
+    },
+    {
+        "model": ,
+        "pk": 150,
+        "fields": {
+            "name": "Futsunushi",
+            "arcana": "Chariot",
+            "level": 80,
+            "price": 0,
+            "special": True
+        }
+    },
+    {
+        "model": ,
+        "pk": 151,
+        "fields": {
+            "name": "Kaiwan",
+            "arcana": "Star",
+            "level": 24,
+            "price": 0,
+            "special": False
+        }
+    },
+    {
+        "model": ,
+        "pk": 152,
+        "fields": {
+            "name": "Neko Shogun",
+            "arcana": "Star",
+            "level": 32,
+            "price": 0,
+            "special": True
+        }
+    },
+    {
+        "model": ,
+        "pk": 153,
+        "fields": {
+            "name": "Fuu-ki",
+            "arcana": "Star",
+            "level": 43,
+            "price": 0,
+            "special": False
+        }
+    },
+    {
+        "model": ,
+        "pk": 154,
+        "fields": {
+            "name": "Ganesha",
+            "arcana": "Star",
+            "level": 50,
+            "price": 0,
+            "special": False
+        }
+    },
+    {
+        "model": ,
+        "pk": 155,
+        "fields": {
+            "name": "Garuda",
+            "arcana": "Star",
+            "level": 57,
+            "price": 0,
+            "special": False
+        }
+    },
+    {
+        "model": ,
+        "pk": 156,
+        "fields": {
+            "name": "Kartikeya",
+            "arcana": "Star",
+            "level": 67,
+            "price": 0,
+            "special": False
+        }
+    },
+    {
+        "model": ,
+        "pk": 157,
+        "fields": {
+            "name": "Saturnus",
+            "arcana": "Star",
+            "level": 75,
+            "price": 0,
+            "special": False
+        }
+    },
+    {
+        "model": ,
+        "pk": 158,
+        "fields": {
+            "name": "Helel",
+            "arcana": "Star",
+            "level": 87,
+            "price": 0,
+            "special": False
+        }
+    },
+    {
+        "model": ,
+        "pk": 159,
+        "fields": {
+            "name": "Gurr",
+            "arcana": "Jester",
+            "level": 20,
+            "price": 0,
+            "special": False
+        }
+    },
+    {
+        "model": ,
+        "pk": 160,
+        "fields": {
+            "name": "Take-Minakata",
+            "arcana": "Jester",
+            "level": 27,
+            "price": 0,
+            "special": False
+        }
+    },
+    {
+        "model": ,
+        "pk": 161,
+        "fields": {
+            "name": "Pale Rider",
+            "arcana": "Jester",
+            "level": 34,
+            "price": 0,
+            "special": False
+        }
+    },
+    {
+        "model": ,
+        "pk": 162,
+        "fields": {
+            "name": "Loa",
+            "arcana": "Jester",
+            "level": 40,
+            "price": 0,
+            "special": False
+        }
+    },
+    {
+        "model": ,
+        "pk": 163,
+        "fields": {
+            "name": "Baphomet",
+            "arcana": "Jester",
+            "level": 47,
+            "price": 0,
+            "special": False
+        }
+    },
+    {
+        "model": ,
+        "pk": 164,
+        "fields": {
+            "name": "Kumbhanda",
+            "arcana": "Jester",
+            "level": 55,
+            "price": 0,
+            "special": False
+        }
+    },
+    {
+        "model": ,
+        "pk": 165,
+        "fields": {
+            "name": "Chernobog",
+            "arcana": "Jester",
+            "level": 62,
+            "price": 0,
+            "special": False
+        }
+    },
+    {
+        "model": ,
+        "pk": 166,
+        "fields": {
+            "name": "Seiten Taisei",
+            "arcana": "Jester",
+            "level": 68,
+            "price": 0,
+            "special": False
+        }
+    },
+    {
+        "model": ,
+        "pk": 167,
+        "fields": {
+            "name": "Magatsu Izanagi",
+            "arcana": "Jester",
+            "level": 77,
+            "price": 0,
+            "special": False
+        }
+    },
+    {
+        "model": ,
+        "pk": 168,
+        "fields": {
+            "name": "Ame-no-Uzume",
+            "arcana": "Aeon",
+            "level": 18,
+            "price": 0,
+            "special": False
+        }
+    },
+    {
+        "model": ,
+        "pk": 169,
+        "fields": {
+            "name": "Narcissus",
+            "arcana": "Aeon",
+            "level": 24,
+            "price": 0,
+            "special": False
+        }
+    },
+    {
+        "model": ,
+        "pk": 170,
+        "fields": {
+            "name": "Sati",
+            "arcana": "Aeon",
+            "level": 31,
+            "price": 0,
+            "special": False
+        }
+    },
+    {
+        "model": ,
+        "pk": 171,
+        "fields": {
+            "name": "Raja Naga",
+            "arcana": "Aeon",
+            "level": 37,
+            "price": 0,
+            "special": False
+        }
+    },
+    {
+        "model": ,
+        "pk": 172,
+        "fields": {
+            "name": "Kushinada-Hime",
+            "arcana": "Aeon",
+            "level": 44,
+            "price": 0,
+            "special": False
+        }
+    },
+    {
+        "model": ,
+        "pk": 173,
+        "fields": {
+            "name": "Quetzalcoatl",
+            "arcana": "Aeon",
+            "level": 51,
+            "price": 0,
+            "special": False
+        }
+    },
+    {
+        "model": ,
+        "pk": 174,
+        "fields": {
+            "name": "Kingu",
+            "arcana": "Aeon",
+            "level": 58,
+            "price": 0,
+            "special": False
+        }
+    },
+    {
+        "model": ,
+        "pk": 175,
+        "fields": {
+            "name": "Lakshmi",
+            "arcana": "Aeon",
+            "level": 65,
+            "price": 0,
+            "special": False
+        }
+    },
+    {
+        "model": ,
+        "pk": 176,
+        "fields": {
+            "name": "Kaguya",
+            "arcana": "Aeon",
+            "level": 74,
+            "price": 0,
+            "special": False
+        }
+    },
+    {
+        "model": ,
+        "pk": 177,
+        "fields": {
+            "name": "Senri",
+            "arcana": "Empress",
+            "level": 9,
+            "price": 0,
+            "special": False
+        }
+    },
+    {
+        "model": ,
+        "pk": 178,
+        "fields": {
+            "name": "Yaksini",
+            "arcana": "Empress",
+            "level": 18,
+            "price": 0,
+            "special": False
+        }
+    },
+    {
+        "model": ,
+        "pk": 179,
+        "fields": {
+            "name": "Titania",
+            "arcana": "Empress",
+            "level": 26,
+            "price": 0,
+            "special": False
+        }
+    },
+    {
+        "model": ,
+        "pk": 180,
+        "fields": {
+            "name": "Gorgon",
+            "arcana": "Empress",
+            "level": 34,
+            "price": 0,
+            "special": False
+        }
+    },
+    {
+        "model": ,
+        "pk": 181,
+        "fields": {
+            "name": "Gabriel",
+            "arcana": "Empress",
+            "level": 44,
+            "price": 0,
+            "special": False
+        }
+    },
+    {
+        "model": ,
+        "pk": 182,
+        "fields": {
+            "name": "Skadi",
+            "arcana": "Empress",
+            "level": 52,
+            "price": 0,
+            "special": False
+        }
+    },
+    {
+        "model": ,
+        "pk": 183,
+        "fields": {
+            "name": "Mother Harlot",
+            "arcana": "Empress",
+            "level": 60,
+            "price": 0,
+            "special": False
+        }
+    },
+    {
+        "model": ,
+        "pk": 184,
+        "fields": {
+            "name": "Alilat",
+            "arcana": "Empress",
+            "level": 70,
+            "price": 0,
+            "special": False
+        }
+    },
+    {
+        "model": ,
+        "pk": 185,
+        "fields": {
+            "name": "Isis",
+            "arcana": "Empress",
+            "level": 79,
+            "price": 0,
+            "special": False
+        }
+    },
+    {
+        "model": ,
+        "pk": 186,
+        "fields": {
+            "name": "Izanagi-no-Okami",
+            "arcana": "World",
+            "level": 91,
+            "price": 0,
+            "special": False
+        }
+    },
+    {
+        "model": ,
+        "pk": 187,
+        "fields": {
+            "name": "Pixie",
+            "arcana": "Magician",
+            "level": 2,
+            "price": 0,
+            "special": False
+        }
+    },
+    {
+        "model": ,
+        "pk": 188,
+        "fields": {
+            "name": "Orobas",
+            "arcana": "Magician",
+            "level": 8,
+            "price": 0,
+            "special": False
+        }
+    },
+    {
+        "model": ,
+        "pk": 189,
+        "fields": {
+            "name": "Jack Frost",
+            "arcana": "Magician",
+            "level": 16,
+            "price": 0,
+            "special": False
+        }
+    },
+    {
+        "model": ,
+        "pk": 190,
+        "fields": {
+            "name": "Hua Po",
+            "arcana": "Magician",
+            "level": 25,
+            "price": 0,
+            "special": False
+        }
+    },
+    {
+        "model": ,
+        "pk": 191,
+        "fields": {
+            "name": "Pyro Jack",
+            "arcana": "Magician",
+            "level": 32,
+            "price": 0,
+            "special": False
+        }
+    },
+    {
+        "model": ,
+        "pk": 192,
+        "fields": {
+            "name": "Dis",
+            "arcana": "Magician",
+            "level": 39,
+            "price": 0,
+            "special": False
+        }
+    },
+    {
+        "model": ,
+        "pk": 193,
+        "fields": {
+            "name": "Rangda",
+            "arcana": "Magician",
+            "level": 47,
+            "price": 0,
+            "special": False
+        }
+    },
+    {
+        "model": ,
+        "pk": 194,
+        "fields": {
+            "name": "Jinn",
+            "arcana": "Magician",
+            "level": 62,
+            "price": 0,
+            "special": False
+        }
+    },
+    {
+        "model": ,
+        "pk": 195,
+        "fields": {
+            "name": "Surt",
+            "arcana": "Magician",
+            "level": 69,
+            "price": 0,
+            "special": False
+        }
+    },
+    {
+        "model": ,
+        "pk": 196,
+        "fields": {
+            "name": "Mada",
+            "arcana": "Magician",
+            "level": 78,
+            "price": 0,
+            "special": False
+        }
+    },
+    {
+        "model": ,
+        "pk": 197,
+        "fields": {
+            "name": "Berith",
+            "arcana": "Hanged man",
+            "level": 15,
+            "price": 0,
+            "special": False
+        }
+    },
+    {
+        "model": ,
+        "pk": 198,
+        "fields": {
+            "name": "Yomotsu-Ikusa",
+            "arcana": "Hanged man",
+            "level": 22,
+            "price": 0,
+            "special": False
+        }
+    },
+    {
+        "model": ,
+        "pk": 199,
+        "fields": {
+            "name": "Makami",
+            "arcana": "Hanged man",
+            "level": 27,
+            "price": 0,
+            "special": False
+        }
+    },
+    {
+        "model": ,
+        "pk": 200,
+        "fields": {
+            "name": "Orthrus",
+            "arcana": "Hanged man",
+            "level": 39,
+            "price": 0,
+            "special": False
+        }
+    },
+    {
+        "model": ,
+        "pk": 201,
+        "fields": {
+            "name": "Yatsufusa",
+            "arcana": "Hanged man",
+            "level": 49,
+            "price": 0,
+            "special": True
+        }
+    },
+    {
+        "model": ,
+        "pk": 202,
+        "fields": {
+            "name": "Taowu",
+            "arcana": "Hanged man",
+            "level": 56,
+            "price": 0,
+            "special": False
+        }
+    },
+    {
+        "model": ,
+        "pk": 203,
+        "fields": {
+            "name": "Hell Biker",
+            "arcana": "Hanged man",
+            "level": 66,
+            "price": 0,
+            "special": False
+        }
+    },
+    {
+        "model": ,
+        "pk": 204,
+        "fields": {
+            "name": "Vasuki",
+            "arcana": "Hanged man",
+            "level": 71,
+            "price": 0,
+            "special": False
+        }
+    },
+    {
+        "model": ,
+        "pk": 205,
+        "fields": {
+            "name": "Attis",
+            "arcana": "Hanged man",
+            "level": 82,
+            "price": 0,
+            "special": False
+        }
+    },
+]
