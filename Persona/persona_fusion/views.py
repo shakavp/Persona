@@ -1,8 +1,10 @@
-from django.http import HttpResponse
-from persona_fusion.models import Persona
+from django.template import RequestContext
+from django.shortcuts import render_to_response
+
+# from persona_fusion.models import Persona
+from persona_fusion.forms import PersonaFusionForm
 
 
 def index(request):
-    all_persona = Persona.objects.all()
-    output = '; '.join([p.name for p in all_persona])
-    return HttpResponse(output)
+    form = PersonaFusionForm()
+    return render_to_response('index.html', {'form': form}, RequestContext(request))

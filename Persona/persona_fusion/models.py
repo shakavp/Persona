@@ -7,3 +7,6 @@ class Persona(models.Model):
     arcana = models.CharField(max_length=100, editable=False)
     price = models.IntegerField(editable=False)
     special = models.BooleanField()
+
+    def __unicode__(self):
+        return self.name

@@ -1,0 +1,27 @@
+<h1>Persona Fusion</h1>
+
+<form action="" method="post">
+    {% csrf_token %}
+    <div class="persona">
+        <label for="id_requested_in">Persona 1</label>
+        <div class="input">
+            {{ form.persona1 }}
+        </div>
+    </div>
+    <div class="persona">
+        <label for="id_requested_in">Persona 2</label>
+        <div class="input">
+            {{ form.persona2 }}
+        </div>
+    </div>
+    <div class="persona">
+        <label for="id_requested_in">Persona 3</label>
+        <div class="input">
+            {{ form.persona3 }}
+        </div>
+    </div>
+    <div class="persona">
+        <input value ="result" id="result" type="text" readonly/>
+    </div>
+    <input type="submit" value="Calculate" />
+</form>
