@@ -17,7 +17,10 @@ def calculate(request):
         if form.is_valid():
             persona1 = Persona.objects.get(pk=int(request.POST['persona1'])).name
             persona2 = Persona.objects.get(pk=int(request.POST['persona2'])).name
-            persona3 = Persona.objects.get(pk=int(request.POST['persona3'])).name
-            result = persona1 + persona2 + persona3
+            try:
+                persona3 = Persona.objects.get(pk=int(request.POST['persona3'])).name
+            except ValueError:
+                persona3 = None
+            result = persona1 + persona2 + str(persona3)
             return render_to_response('index.html', {'form': form, 'result': result}, RequestContext(request))
-    return redirect("/index/")
+    return redirect("/persona_fusion/")
