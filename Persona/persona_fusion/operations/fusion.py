@@ -207,6 +207,16 @@ def triangle_fusion(persona_1, persona_2, persona_3):
     return result
 
 
+def init_dicts():
+    fusion_list = open("fusion_list.txt")
+    personas_list = open("personas.txt")
+    make_weight()
+    make_fusion_dict(fusion_list)
+    make_personas_dict(personas_list)
+    fusion_list.close()
+    personas_list.close()
+
+
 def fusion_persona(persona_1, persona_2, persona_3=None):
     if persona_3:
         result = triangle_fusion(persona_1, persona_2, persona_3)
@@ -254,11 +264,6 @@ def print_debug():
 
 
 if __name__ == '__main__':
-    fusion_list = open("fusion_list.txt")
-    personas_list = open("personas.txt")
-    make_weight()
-    make_fusion_dict(fusion_list)
-    make_personas_dict(personas_list)
     p1 = ('', 'Lovers', 23)
     p2 = ('', 'Chariot', 23)
     print (fusion_persona(p1, p2))
@@ -280,5 +285,4 @@ if __name__ == '__main__':
     print (fusion_persona(p1, p3, p2))
     if DEBUG:
         print_debug()
-    fusion_list.close()
-    personas_list.close()
+
