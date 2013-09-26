@@ -1,6 +1,6 @@
 <h1>Persona Fusion</h1>
 
-<form action="" method="post">
+<form action="{% url 'persona_fusion:calculate' %}" method="post">
     {% csrf_token %}
     <div class="persona">
         <label for="id_requested_in">Persona 1</label>
