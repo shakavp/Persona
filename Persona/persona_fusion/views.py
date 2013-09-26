@@ -22,8 +22,8 @@ def fusion(name1, name2, name3):
         persona3 = Persona.objects.get(name=name3)
         persona3_tuple = tuple((persona3.name, persona3.arcana, persona3.level))
     else:
-        persona3 = None
-    return fusion_persona(persona1, persona2, persona3)[0]
+        persona3_tuple = None
+    return fusion_persona(persona1_tuple, persona2_tuple, persona3_tuple)[0]
 
 
 def calculate(request):
@@ -38,4 +38,8 @@ def calculate(request):
                 persona3 = None
             result = fusion(persona1, persona2, persona3)
             return render_to_response('index.html', {'form': form, 'result': result}, RequestContext(request))
+        else:
+            form_error = PersonaFusionForm()
+            result_error = "Invalid input"
+            return render_to_response('index.html', {'form': form_error, 'result': result_error}, RequestContext(request))
     return redirect("/persona_fusion/")

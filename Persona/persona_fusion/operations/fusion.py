@@ -218,6 +218,7 @@ def init_dicts():
 
 
 def fusion_persona(persona_1, persona_2, persona_3=None):
+    print (persona_1)
     if persona_3:
         result = triangle_fusion(persona_1, persona_2, persona_3)
         return tuple(result)
