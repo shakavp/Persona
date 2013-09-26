@@ -21,7 +21,14 @@
         </div>
     </div>
     <div class="persona">
-        <input value ="result" id="result" type="text" readonly/>
+        <input value ="{{result}}" id="result" type="text" readonly/>
     </div>
     <input type="submit" value="Calculate" />
+</form>
+
+<form action="{% url 'persona_fusion:index' %}" method="post">
+    {% csrf_token %}
+    <div class="reset">
+        <input type="submit" value="Reset" />
+    </div>
 </form>
