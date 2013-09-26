@@ -5,7 +5,7 @@ MODEL = '"persona_fusion.Persona"'
 
 
 def make_json():
-    personas_list = open("personas.txt")
+    personas_list = open("../personas.txt")
     make_personas_dict(personas_list)
     personas_list.close()
     fixture = open("fixture.json", "w")
