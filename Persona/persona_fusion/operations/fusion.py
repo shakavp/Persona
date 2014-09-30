@@ -4,7 +4,6 @@ from operator import itemgetter
 from math import ceil
 
 
-DEBUG = True
 ARCANAS = {
     1: 'Fool',
     2: 'Magician',
@@ -70,12 +69,28 @@ def make_combinations():
     return combinations
 
 
+def add_world_arcana():
+    arcanas = [i for i in ARCANAS.values() if i != 'NA']
+    for arcana in arcanas:
+        FUSION.update({tuple(('World', arcana)): 'NA'})
+        FUSION.update({tuple((arcana, 'World')): 'NA'})
+
+
+def add_na_arcana():
+    arcanas = [i for i in ARCANAS.values()]
+    for arcana in arcanas:
+        FUSION.update({tuple(('NA', arcana)): 'NA'})
+        FUSION.update({tuple((arcana, 'NA')): 'NA'})
+
+
 def make_fusion_dict(fusion_list):
     comb_list = make_combinations()
     i = 0
     for line in fusion_list:
         FUSION.update({comb_list[i]: line.strip()})
         i += 1
+    add_world_arcana()
+    add_na_arcana()
 
 
 def file_to_list(personas_list):
@@ -218,72 +233,8 @@ def init_dicts():
 
 
 def fusion_persona(persona_1, persona_2, persona_3=None):
-    print (persona_1)
     if persona_3:
         result = triangle_fusion(persona_1, persona_2, persona_3)
         return tuple(result)
     result = normal_fusion(persona_1, persona_2)
     return tuple(result)
-
-
-def test_fusion_list():
-    f1 = open("fusion_list.txt")
-    print (WEIGHT)
-    for line in f1:
-        try:
-            WEIGHT[line.strip()]
-        except KeyError:
-            print ("ERRO:", line.strip())
-    f1.close()
-
-
-def test_special_fusion():
-    personas_list = []
-    for personas in PERSONAS.values():
-        personas_list.extend(personas)
-    personas_list = [i[0] for i in personas_list]
-    personas_set = set(personas_list)
-    print (sorted(list(personas_set)))
-
-    special_personas_list = []
-    for special_pesona in SPECIAL_FUSION.items():
-        special_personas_list.append(special_pesona[0])
-        special_personas_list.extend(list(special_pesona[1]))
-    for persona in special_personas_list:
-        if persona not in personas_set:
-            print ("ERRO:", persona)
-
-
-def print_debug():
-    f1 = open("combina.txt", 'w')
-    for l in FUSION.items():
-        f1.write(str(l) + '\n')
-    test_fusion_list()
-    test_special_fusion()
-    f1.close()
-    print (PERSONAS)
-
-
-if __name__ == '__main__':
-    p1 = ('', 'Lovers', 23)
-    p2 = ('', 'Chariot', 23)
-    print (fusion_persona(p1, p2))
-    print (fusion_persona(p2, p1))
-    p1 = ('', 'Star', 23)
-    p2 = ('', 'Jester', 23)
-    print (fusion_persona(p1, p2))
-    print (fusion_persona(p2, p1))
-    p1 = ('', 'Strength', 23)
-    p2 = ('', 'Judgement', 23)
-    print (fusion_persona(p1, p2))
-    print (fusion_persona(p2, p1))
-    p1 = ('', 'Empress', 9)
-    p2 = ('', 'Justice', 49)
-    p3 = ('', 'Fool', 64)
-    print (fusion_persona(p1, p2, p3))
-    print (fusion_persona(p2, p1, p3))
-    print (fusion_persona(p3, p1, p2))
-    print (fusion_persona(p1, p3, p2))
-    if DEBUG:
-        print_debug()
-
