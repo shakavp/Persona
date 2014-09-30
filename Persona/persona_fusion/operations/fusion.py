@@ -2,6 +2,7 @@
 
 from operator import itemgetter
 from math import ceil
+import re
 
 
 ARCANAS = {
@@ -238,3 +239,35 @@ def fusion_persona(persona_1, persona_2, persona_3=None):
         return tuple(result)
     result = normal_fusion(persona_1, persona_2)
     return tuple(result)
+
+
+def define_pattern(entry, pattern, last=False):
+    if entry:
+        pattern = pattern + '(' + entry + ')%'
+    elif last:
+        pattern = pattern + r'(\w+|-)%'
+    else:
+        pattern = pattern + r'(\w+)%'
+    return pattern
+
+
+def mount_result_pattern(persona_1, persona_2, persona_3, result):
+    pre_pattern = sorted([persona_1, persona_2, persona_3], reverse=True)
+    pre_pattern.append(result)
+    pattern = define_pattern(pre_pattern[0], '')
+    pattern = define_pattern(pre_pattern[1], pattern)
+    pattern = define_pattern(pre_pattern[2], pattern, True)
+    pattern = pattern + '(' + pre_pattern[3] + ')'
+    pattern = re.compile(pattern)
+    return pattern
+
+
+def fusion_given_a_result(persona_1, persona_2, persona_3, result):
+    pattern = mount_result_pattern(persona_1, persona_2, persona_3, result)
+    combinations = open("combs.txt")
+    for comb in combinations:
+        if pattern.match(comb):
+            print comb
+
+if __name__ == '__main__':
+    fusion_given_a_result('a', None, '1', 'aa')
