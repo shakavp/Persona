@@ -1,0 +1,252 @@
+FOOL
+Izanagi 1
+Yomotsu-Shikome 7
+Obariyon 13
+Legion 21
+Ose 31
+Black Frost 38
+Decarabia 46
+Shiki-Ouji 56
+Loki 64
+
+MAGICIAN
+Pixie 2
+Orobas 8
+Jack Frost 16
+Hua Po 25
+Pyro Jack 32
+Dis 39
+Rangda 47
+Jinn 62
+Surt 69
+Mada 78
+
+PRIESTESS
+Saki Mitama 11
+Sarasvati 17
+High Pixie 22
+Ganga 29
+Parvati 37
+Kikuri-Hime 48
+Hariti 59
+Tzitzimitl 70
+Scathach 79
+
+EMPRESS
+Senri 9
+Yaksini 18
+Titania 26
+Gorgon 34
+Gabriel 44
+Skadi 52
+Mother Harlot 60
+Alilat 70
+Isis 79
+
+EMPEROR
+Oberon 12
+King Frost 22
+Sentanta 34
+Oukuninushi 41
+Thoth 45
+Pabilsag 51
+Barong 65
+Odin 74
+
+HIEROPHANT
+Omoikane 7
+Anzu 15
+Shiisaa 21
+Unicorn 29
+Flauros 36
+Hokuto Seikun 45
+Cerberus 52
+Daisoujou 60
+Hachiman 70
+Kohryu 76
+
+LOVERS
+Queen Mab 25
+Undine 33
+Leanan Sidhe 42
+Raphael 53
+Cybele 64
+lshtar 71
+
+CHARIOT
+Slime 2
+Nata Taishi 6
+Eligor 12
+Ara Mitama 18
+Ares 25
+Triglav 43
+Kin-ki 54
+Thor 65
+Atavaka 72
+Futsunushi 80
+
+JUSTICE
+Angel 4
+Archangel 11
+Principality 19
+Power 27
+Virtue 33
+Dominion 38
+Throne 49
+Uriel 58
+Melchizedek 66
+Sraosha 74
+
+HERMIT
+Forneus 6
+Ippon-Datara 17
+Lamia 26
+Mothman 33
+Hitokoto-Nushi 41
+Kurama Tengu 48
+Niddhoggr 55
+Nebiros 63
+Arahabaki 73
+Ongyo-ki 82
+
+FORTUNE
+Fortuna 35
+Clotho 44
+Lachesis 51
+Ananta 58
+Atropos 65
+Norn 72
+
+STRENGTH
+Sandman 5
+Valkyrie 8
+Titan 14
+Rakshasa 23
+Kusi Mitama 28
+Oni 30
+Hanuman 42
+Kali 50
+Siegfried 63
+Zaou-Gongen 90
+
+HANGED MAN
+Berith 15
+Yomotsu-Ikusa 22
+Makami 27
+Orthrus 39
+Yatsufusa 49
+Taowu 56
+Hell Biker 66
+Vasuki 71
+Attis 82
+
+DEATH
+Ghoul 9
+Mokoi 14
+Matador 24
+Samael 36
+Mot 46
+White Rider 58
+Alice 72
+Mahakala 78
+
+TEMPERANCE
+Apsaras 4
+Sylph 11
+Xiezhai 16
+Nigi Mitama 23
+Mithra 31
+Genbu 40
+Seiryu 47
+Suzaku 54
+Byakko 62
+Yurlungur 69
+Vishnu 73
+
+DEVIL
+Ukobach 3
+Lilim 10
+Vetala 19
+Incubus 28
+Pazuzu 37
+Succubus 44
+Lilith 53
+Belphegor 61
+Belial 68
+Beelzebub 81
+
+TOWER
+Taotie 35
+Cu Chulainn 46
+Abaddon 55
+Mara 62
+Masakado 69
+Yoshitsune 75
+Shiva 80
+
+STAR
+Kaiwan 24
+Neko Shogun 32
+Fuu-ki 43
+Ganesha 50
+Garuda 57
+Kartikeya 67
+Saturnus 75
+Helel 87
+
+MOON
+Andra 20
+Nozuchi 27
+Yamata-no-Orochi 34
+Alraune 41
+Girimehkala 48
+Sui-ki 57
+Seth 68
+Baal Zebul 77
+Sandalphon 84
+
+SUN
+Cu Sith 10
+Phoenix 20
+Gdon 31
+Yatagarasu 40
+Narasimha 47
+Tam Lin 53
+Jatayu 61
+Horus 68
+Suparna 77
+Asura 86
+
+JUDGEMENT
+Anubis 59
+Trumpeter 67
+Michael 72
+Satan 76
+Metatron 83
+Ardha 90
+Lucifer 93
+
+JESTER
+Gurr 20
+Take-Minakata 27
+Pale Rider 34
+Loa 40
+Baphomet 47
+Kumbhanda 55
+Chernobog 62
+Seiten Taisei 68
+Magatsu Izanagi 77
+
+AEON
+Ame-no-Uzume 18
+Narcissus 24
+Sati 31
+Raja Naga 37
+Kushinada-Hime 44
+Quetzalcoatl 51
+Kingu 58
+Lakshmi 65
+Kaguya 74
+
+WORLD
+Izanagi-no-Okami 91
