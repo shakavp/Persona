@@ -1,0 +1,410 @@
+1|Omoikane
+Omoikane|1
+2|Anzu
+Anzu|2
+3|Shiisaa
+Shiisaa|3
+4|Unicorn
+Unicorn|4
+5|Flauros
+Flauros|5
+6|Hokuto Seikun
+Hokuto Seikun|6
+7|Cerberus
+Cerberus|7
+8|Daisoujou
+Daisoujou|8
+9|Hachiman
+Hachiman|9
+a|Kohryu
+Kohryu|a
+b|Ukobach
+Ukobach|b
+c|Lilim
+Lilim|c
+d|Vetala
+Vetala|d
+e|Incubus
+Incubus|e
+f|Pazuzu
+Pazuzu|f
+10|Succubus
+Succubus|10
+11|Lilith
+Lilith|11
+12|Belphegor
+Belphegor|12
+13|Belial
+Belial|13
+14|Beelzebub
+Beelzebub|14
+15|Fortuna
+Fortuna|15
+16|Clotho
+Clotho|16
+17|Lachesis
+Lachesis|17
+18|Ananta
+Ananta|18
+19|Atropos
+Atropos|19
+1a|Norn
+Norn|1a
+1b|Angel
+Angel|1b
+1c|Archangel
+Archangel|1c
+1d|Principality
+Principality|1d
+1e|Power
+Power|1e
+1f|Virtue
+Virtue|1f
+20|Dominion
+Dominion|20
+21|Throne
+Throne|21
+22|Uriel
+Uriel|22
+23|Melchizedek
+Melchizedek|23
+24|Sraosha
+Sraosha|24
+25|Cu Sith
+Cu Sith|25
+26|Phoenix
+Phoenix|26
+27|Gdon
+Gdon|27
+28|Yatagarasu
+Yatagarasu|28
+29|Narasimha
+Narasimha|29
+2a|Tam Lin
+Tam Lin|2a
+2b|Jatayu
+Jatayu|2b
+2c|Horus
+Horus|2c
+2d|Suparna
+Suparna|2d
+2e|Asura
+Asura|2e
+2f|Saki Mitama
+Saki Mitama|2f
+30|Sarasvati
+Sarasvati|30
+31|High Pixie
+High Pixie|31
+32|Ganga
+Ganga|32
+33|Parvati
+Parvati|33
+34|Kikuri-Hime
+Kikuri-Hime|34
+35|Hariti
+Hariti|35
+36|Tzitzimitl
+Tzitzimitl|36
+37|Scathach
+Scathach|37
+38|Andra
+Andra|38
+39|Nozuchi
+Nozuchi|39
+3a|Yamata-no-Orochi
+Yamata-no-Orochi|3a
+3b|Alraune
+Alraune|3b
+3c|Girimehkala
+Girimehkala|3c
+3d|Sui-ki
+Sui-ki|3d
+3e|Seth
+Seth|3e
+3f|Baal Zebul
+Baal Zebul|3f
+40|Sandalphon
+Sandalphon|40
+41|Queen Mab
+Queen Mab|41
+42|Undine
+Undine|42
+43|Leanan Sidhe
+Leanan Sidhe|43
+44|Raphael
+Raphael|44
+45|Cybele
+Cybele|45
+46|lshtar
+lshtar|46
+47|Ghoul
+Ghoul|47
+48|Mokoi
+Mokoi|48
+49|Matador
+Matador|49
+4a|Samael
+Samael|4a
+4b|Mot
+Mot|4b
+4c|White Rider
+White Rider|4c
+4d|Alice
+Alice|4d
+4e|Mahakala
+Mahakala|4e
+4f|Sandman
+Sandman|4f
+50|Valkyrie
+Valkyrie|50
+51|Titan
+Titan|51
+52|Rakshasa
+Rakshasa|52
+53|Kusi Mitama
+Kusi Mitama|53
+54|Oni
+Oni|54
+55|Hanuman
+Hanuman|55
+56|Kali
+Kali|56
+57|Siegfried
+Siegfried|57
+58|Zaou-Gongen
+Zaou-Gongen|58
+59|Apsaras
+Apsaras|59
+5a|Sylph
+Sylph|5a
+5b|Xiezhai
+Xiezhai|5b
+5c|Nigi Mitama
+Nigi Mitama|5c
+5d|Mithra
+Mithra|5d
+5e|Genbu
+Genbu|5e
+5f|Seiryu
+Seiryu|5f
+60|Suzaku
+Suzaku|60
+61|Byakko
+Byakko|61
+62|Yurlungur
+Yurlungur|62
+63|Vishnu
+Vishnu|63
+64|Taotie
+Taotie|64
+65|Cu Chulainn
+Cu Chulainn|65
+66|Abaddon
+Abaddon|66
+67|Mara
+Mara|67
+68|Masakado
+Masakado|68
+69|Yoshitsune
+Yoshitsune|69
+6a|Shiva
+Shiva|6a
+6b|Oberon
+Oberon|6b
+6c|King Frost
+King Frost|6c
+6d|Sentanta
+Sentanta|6d
+6e|Oukuninushi
+Oukuninushi|6e
+6f|Thoth
+Thoth|6f
+70|Pabilsag
+Pabilsag|70
+71|Barong
+Barong|71
+72|Odin
+Odin|72
+73|Forneus
+Forneus|73
+74|Ippon-Datara
+Ippon-Datara|74
+75|Lamia
+Lamia|75
+76|Mothman
+Mothman|76
+77|Hitokoto-Nushi
+Hitokoto-Nushi|77
+78|Kurama Tengu
+Kurama Tengu|78
+79|Niddhoggr
+Niddhoggr|79
+7a|Nebiros
+Nebiros|7a
+7b|Arahabaki
+Arahabaki|7b
+7c|Ongyo-ki
+Ongyo-ki|7c
+7d|Izanagi
+Izanagi|7d
+7e|Yomotsu-Shikome
+Yomotsu-Shikome|7e
+7f|Obariyon
+Obariyon|7f
+80|Legion
+Legion|80
+81|Ose
+Ose|81
+82|Black Frost
+Black Frost|82
+83|Decarabia
+Decarabia|83
+84|Shiki-Ouji
+Shiki-Ouji|84
+85|Loki
+Loki|85
+86|Anubis
+Anubis|86
+87|Trumpeter
+Trumpeter|87
+88|Michael
+Michael|88
+89|Satan
+Satan|89
+8a|Metatron
+Metatron|8a
+8b|Ardha
+Ardha|8b
+8c|Lucifer
+Lucifer|8c
+8d|Slime
+Slime|8d
+8e|Nata Taishi
+Nata Taishi|8e
+8f|Eligor
+Eligor|8f
+90|Ara Mitama
+Ara Mitama|90
+91|Ares
+Ares|91
+92|Triglav
+Triglav|92
+93|Kin-ki
+Kin-ki|93
+94|Thor
+Thor|94
+95|Atavaka
+Atavaka|95
+96|Futsunushi
+Futsunushi|96
+97|Kaiwan
+Kaiwan|97
+98|Neko Shogun
+Neko Shogun|98
+99|Fuu-ki
+Fuu-ki|99
+9a|Ganesha
+Ganesha|9a
+9b|Garuda
+Garuda|9b
+9c|Kartikeya
+Kartikeya|9c
+9d|Saturnus
+Saturnus|9d
+9e|Helel
+Helel|9e
+9f|Gurr
+Gurr|9f
+a0|Take-Minakata
+Take-Minakata|a0
+a1|Pale Rider
+Pale Rider|a1
+a2|Loa
+Loa|a2
+a3|Baphomet
+Baphomet|a3
+a4|Kumbhanda
+Kumbhanda|a4
+a5|Chernobog
+Chernobog|a5
+a6|Seiten Taisei
+Seiten Taisei|a6
+a7|Magatsu Izanagi
+Magatsu Izanagi|a7
+a8|Ame-no-Uzume
+Ame-no-Uzume|a8
+a9|Narcissus
+Narcissus|a9
+aa|Sati
+Sati|aa
+ab|Raja Naga
+Raja Naga|ab
+ac|Kushinada-Hime
+Kushinada-Hime|ac
+ad|Quetzalcoatl
+Quetzalcoatl|ad
+ae|Kingu
+Kingu|ae
+af|Lakshmi
+Lakshmi|af
+b0|Kaguya
+Kaguya|b0
+b1|Senri
+Senri|b1
+b2|Yaksini
+Yaksini|b2
+b3|Titania
+Titania|b3
+b4|Gorgon
+Gorgon|b4
+b5|Gabriel
+Gabriel|b5
+b6|Skadi
+Skadi|b6
+b7|Mother Harlot
+Mother Harlot|b7
+b8|Alilat
+Alilat|b8
+b9|Isis
+Isis|b9
+ba|Izanagi-no-Okami
+Izanagi-no-Okami|ba
+bb|Pixie
+Pixie|bb
+bc|Orobas
+Orobas|bc
+bd|Jack Frost
+Jack Frost|bd
+be|Hua Po
+Hua Po|be
+bf|Pyro Jack
+Pyro Jack|bf
+c0|Dis
+Dis|c0
+c1|Rangda
+Rangda|c1
+c2|Jinn
+Jinn|c2
+c3|Surt
+Surt|c3
+c4|Mada
+Mada|c4
+c5|Berith
+Berith|c5
+c6|Yomotsu-Ikusa
+Yomotsu-Ikusa|c6
+c7|Makami
+Makami|c7
+c8|Orthrus
+Orthrus|c8
+c9|Yatsufusa
+Yatsufusa|c9
+ca|Taowu
+Taowu|ca
+cb|Hell Biker
+Hell Biker|cb
+cc|Vasuki
+Vasuki|cc
+cd|Attis
+Attis|cd
