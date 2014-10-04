@@ -74,12 +74,12 @@ def calculate(request):
 
             elif is_result_required and result_found:
                 results_list = fusion_given_a_result(persona1, persona2, persona3, persona4)
-                results_list = [format_persona_formaulas_printing(i) for i in results_list]
+                [i.insert(2, '') for i in results_list if len(i) == 3]
                 return render_to_response('results.html', {'form': form, 'results_list': results_list}, RequestContext(request))
 
             elif not is_result_required and result_found:
                 results_list = fusion_given_a_result(persona1, persona2, persona3, persona4)
-                results_list = [format_persona_formaulas_printing(i) for i in results_list]
+                [i.insert(2, '') for i in results_list if len(i) == 3]
                 return render_to_response('results.html', {'form': form, 'results_list': results_list}, RequestContext(request))
 
             else:

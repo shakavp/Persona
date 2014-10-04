@@ -1,45 +1,104 @@
-<h1>Persona Fusion</h1>
+{% load staticfiles %}
 
-<form action="{% url 'persona_fusion:calculate' %}" method="post">
-    {% csrf_token %}
-    <div class="persona">
-        <label for="id_requested_in">Persona 1</label>
-        <div class="input">
-            {{ form.persona1 }}
-        </div>
-    </div>
-    <div class="persona">
-        <label for="id_requested_in">Persona 2</label>
-        <div class="input">
-            {{ form.persona2 }}
-        </div>
-    </div>
-    <div class="persona">
-        <label for="id_requested_in">Persona 3</label>
-        <div class="input">
-            {{ form.persona3 }}
-        </div>
-    </div>
-    <div class="persona">
-        <label for="id_requested_in">Result</label>
-        <div class="output">
-            {{ form.persona4 }}
-        </div>
-    </div>
-    <input type="submit" value="Calculate" />
-</form>
+<!doctype html>
+<html>
+	<link rel="stylesheet" type="text/css" href="{{STATIC_URL}}style.css" />
+    <head>
+        <title>Persona Fusion</title>
+    </head>
+    <body>
+    	<div class="complete">
+			<h1>Persona Fusion</h1>
 
-<form action="{% url 'persona_fusion:index' %}" method="post">
-    {% csrf_token %}
-    <div class="reset">
-        <input type="submit" value="Reset" />
-    </div>
-</form>
+			<form name="formMain" action="{% url 'persona_fusion:calculate' %}" method="post">
+			    {% csrf_token %}
+			    <div class="selection">
+				    <div class="persona">
+				        <label for="id_requested_in">Persona 1</label>
+				        <div class="input">
+				            {{ form.persona1 }}
+				        </div>
+				    </div>
+				    <div class="persona">
+				        <label for="id_requested_in">Persona 2</label>
+				        <div class="input">
+				            {{ form.persona2 }}
+				        </div>
+				    </div>
+				    <div class="persona">
+				        <label for="id_requested_in">Persona 3</label>
+				        <div class="input">
+				            {{ form.persona3 }}
+				        </div>
+				    </div>
+				    <div class="persona">
+				        <label for="id_requested_in">Result</label>
+				        <div class="output">
+				            {{ form.persona4 }}
+				        </div>
+				    </div>
+			   	</div>
+			</form>
 
-<ul>
-	{% for result in results_list %}
-	    <li>{{ result }}</li>
-	{% empty %}
-	    <li>Sorry, no results.</li>
-	{% endfor %}
-</ul>
+			<form name="formReset" action="{% url 'persona_fusion:index' %}" method="post" style="display: inline;">
+			    {% csrf_token %}
+			</form>
+
+            <div class="reset">
+                    <input type="button" value="Calculate" onClick="document.formMain.submit();"/>
+                    <input type="button" value="Reset" onClick="document.formReset.submit();"/>
+            </div>
+
+            <script>
+            	function searchPersona(element, persona)
+            	{	
+            		text = element.value;
+            		personas1 = document.getElementsByClassName(persona);
+
+					for (i = 0; i < personas1.length; i++)
+            		{	            			
+            			if (personas1[i].innerHTML.toUpperCase().search(text.toUpperCase()) != 0)
+            			{
+            				personas1[i].parentNode.style.display = "none";
+            			}
+            			else 
+            			{
+            				personas1[i].parentNode.style.display = "";
+            			}
+            		}
+            	}
+            </script>
+
+			<div id="personas">
+				<input class="search" placeholder="Search in Persona 1" onKeyUp="searchPersona(this, 'persona1');">
+				<input class="search" placeholder="Search in Persona 2" onKeyUp="searchPersona(this, 'persona2');">
+				<input class="search" placeholder="Search in Persona 3" onKeyUp="searchPersona(this, 'persona3');">
+				<!--<button class="sort" data-sort="name">
+					Sort by first persona name
+				</button> -->
+				<table class="complete">
+				    <thead>
+				        <tr>
+				            <th>#</th>
+				            <th>Persona 1</th>
+				            <th>Persona 2</th>
+				            <th>Persona 3</th>
+				            <th>Result</th>
+				        </tr>
+				    </thead>
+	    			<tbody class="list">
+	    				{% for prob in results_list %}
+						<tr>
+					        <td class="#">{{ forloop.counter }}</td>
+					        <td class="persona1">{{ prob.0 }}</td>
+					        <td class="persona2">{{ prob.1 }}</td>
+					        <td class="persona3">{{ prob.2 }}</td>
+					        <td class="result">{{ prob.3 }}</td>
+						</tr>
+						{% endfor %}
+	    			</tbody>
+				</table>
+			</div>
+		</div>
+    </body>
+</html>
