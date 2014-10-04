@@ -35,6 +35,7 @@ ARCANAS = {
 WEIGHT = {}
 FUSION = {}
 PERSONAS = {}
+PERSONAS_HEX = {}
 SPECIAL_FUSION = {'Alice': ('Nebiros', 'Belial'),
                   'Ardha': ('Parvati', 'Shiva'),
                   'Beelzebub': ('Pazuzu', 'Belphegor', 'Belial', 'Mot', 'Seth', 'Baal Zebul'),
@@ -92,6 +93,15 @@ def make_fusion_dict(fusion_list):
         i += 1
     add_world_arcana()
     add_na_arcana()
+
+
+def make_hex_dict():
+    hex_file = open("hex.txt")
+    PERSONAS_HEX.update({None: None})
+    for entry in hex_file:
+        (key, value) = tuple(entry.strip().split('|'))
+        PERSONAS_HEX.update({key: value})
+    hex_file.close()
 
 
 def file_to_list(personas_list):
@@ -229,6 +239,7 @@ def init_dicts():
     make_weight()
     make_fusion_dict(fusion_list)
     make_personas_dict(personas_list)
+    make_hex_dict()
     fusion_list.close()
     personas_list.close()
 
@@ -262,12 +273,23 @@ def mount_result_pattern(persona_1, persona_2, persona_3, result):
     return pattern
 
 
-def fusion_given_a_result(persona_1, persona_2, persona_3, result):
-    pattern = mount_result_pattern(persona_1, persona_2, persona_3, result)
+def format_fusion_options(fusion_options, hex_personas):
+    fusion_option = []
+    for hex_persona in hex_personas:
+        if hex_persona == '-':
+            continue
+        fusion_option.append(PERSONAS_HEX[hex_persona])
+    fusion_options.append(fusion_option)
+
+
+def fusion_given_a_result(persona_1_name, persona_2_name, persona_3_name, result_name):
+    fusion_options = []
+    pattern = mount_result_pattern(PERSONAS_HEX[persona_1_name],
+                                   PERSONAS_HEX[persona_2_name],
+                                   PERSONAS_HEX[persona_3_name],
+                                   PERSONAS_HEX[result_name])
     combinations = open("combs.txt")
     for comb in combinations:
-        if pattern.match(comb):
-            print comb
-
-if __name__ == '__main__':
-    fusion_given_a_result('a', None, '1', 'aa')
+        hex_personas = pattern.match(comb)
+        if hex_personas:
+            format_fusion_options(fusion_options, hex_personas.groups())
