@@ -35,3 +35,11 @@
         <input type="submit" value="Reset" />
     </div>
 </form>
+
+<ul>
+	{% for result in results_list %}
+	    <li>{{ result }}</li>
+	{% empty %}
+	    <li>Sorry, no results.</li>
+	{% endfor %}
+</ul>

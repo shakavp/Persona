@@ -293,3 +293,4 @@ def fusion_given_a_result(persona_1_name, persona_2_name, persona_3_name, result
         hex_personas = pattern.match(comb)
         if hex_personas:
             format_fusion_options(fusion_options, hex_personas.groups())
+    return fusion_options
